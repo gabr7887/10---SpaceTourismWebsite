@@ -1,7 +1,12 @@
+import './App.css';
+import Nav from './Nav';
+
 function App() {
   return (
     <>
-      <p></p>{' '}
+      <div className="container">
+        <Nav active={0} />
+      </div>{' '}
     </>
   );
 }

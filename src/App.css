@@ -1,0 +1,53 @@
+#root{
+  --blue-900: #0B0D17;
+  --blue-300: #D0D6F9;
+  --white: #FFFFFF;
+  --font1: 400 9rem/171.9% 'Bellefair';
+  --font2: 400 6.25rem/114.6% 'Bellefair';
+  --font3: 400 3.5rem/64.2% 'Bellefair';
+  --font4: 400 2rem/36.7% 'Bellefair';
+  --font5: 400 1.75rem/33.6% 'Barlow Condensed';
+  --font6: 400 1.75rem/32.1% 'Bellefair';
+  --font7: 400 0.875rem/16.8% 'Barlow Condensed';
+  --font8: 400 1rem/19.2% 'Barlow Condensed';
+  --font9: 400 1.125rem/180% 'Barlow';
+  --s1600: 8rem;
+  --s1200: 6rem;
+  --s1000: 5rem;
+  --s800: 4rem;
+  --s600: 3rem;
+  --s500: 2.5rem;
+  --s400: 2rem;
+  --s300: 1.5rem;
+  --s200: 1rem;
+  --s150: 0.75rem;
+  --s100: 0.5rem;
+  --s50: 0.25rem;
+  --s25: 0.125rem;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body, ul{
+  padding: 0;
+  margin: 0;
+}
+
+.teste{
+  color: var(--blue-900);
+  font: var(--font9);
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/home/background-home-desktop.jpg');
+  background-size: cover;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
