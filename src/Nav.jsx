@@ -8,6 +8,9 @@ const Nav = ({ active }) => {
       <div className={style.logoDiv}>
         <img src={logo} alt="Logo marca" />
       </div>
+      <div className={style.detailDiv}>
+        <p className={style.detail}> </p>
+      </div>
       <nav className={style.ulBg}>
         <ul className={style.navItems}>
           <li className={active === 0 ? style.active : ''}>00 - HOME</li>

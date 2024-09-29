@@ -30,7 +30,7 @@
   box-sizing: border-box;
 }
 
-body, ul{
+body, ul, p{
   padding: 0;
   margin: 0;
 }
