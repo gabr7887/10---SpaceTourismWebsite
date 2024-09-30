@@ -35,10 +35,6 @@ body, ul, p{
   margin: 0;
 }
 
-.teste{
-  color: var(--blue-900);
-  font: var(--font9);
-}
 
 .container{
   width: 100vw;

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: var(--s500);
+  position: relative;
 }
 
 .logoDiv{
@@ -68,11 +69,38 @@
   background-color: var(--white);
 }
 
+
+.closeIcon{
+  position: relative;
+}
+
+.hamburgerMenuDiv, .closeIcon{
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: var(--s300);
+  cursor: pointer;
+}
+
+.menuBar, .closeBar1, .closeBar2{
+  width: 24px;
+  height: 3px;
+  background-color: var(--blue-300);
+}
+
+.closeBar1{
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.closeBar2{
+  position: absolute;
+  transform: rotate(45deg);
+}
+
 .navItems li:hover::after{
   background-color: hsla(0 0 100 / 30%);
 }
-
-
 
 @media (width <= 768px) {
   .detailDiv{
@@ -87,5 +115,46 @@
 }
 
 @media (width <= 600px) {
+  .ulBg{
+    display: flex;
+    flex-direction: column;
+    gap: var(--s800);
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    background-color: hsla(0 0 100 / 5%); 
+    padding: 0;
+  }
+  
+  .hamburgerMenuDiv, .closeIcon{
+    display: flex;
+  }
+  
+  .navItems{
+    flex-direction: column;
+    gap: var(--s400);
+    width: 100%;
+    padding-left: var(--s400);
+  }
+  
+  .closeIcon{
+    display: flex;
+    padding: var(--s400) var(--s300);
+    justify-content: center;
+    align-items: end;
+  }
 
+  .navItems li{
+    padding: 0;
+  }
+
+  .navItems li::after{
+    height: 100%;
+    width: 3px;
+  }
+  
 }
