@@ -140,21 +140,23 @@
     width: 100%;
     padding-left: var(--s400);
   }
-  
-  .closeIcon{
-    display: flex;
-    padding: var(--s400) var(--s300);
-    justify-content: center;
-    align-items: end;
-  }
 
   .navItems li{
     padding: 0;
+  }
+  
+  .closeIcon{
+    display: flex;
+    padding: var(--s800) var(--s300)  var(--s400) var(--s300);
+    justify-content: center;
+    align-items: end;
   }
 
   .navItems li::after{
     height: 100%;
     width: 3px;
+    left: initial;
+    right: 0px;
   }
   
 }

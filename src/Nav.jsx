@@ -29,15 +29,9 @@ const Nav = ({ active }) => {
               ? 'HOME'
               : '00 - HOME'}
           </li>
-          <li className={active === 1 ? style.active : ''}>
-            <p>01 - DESTINATION</p>
-          </li>
-          <li className={active === 2 ? style.active : ''}>
-            <p>02 - CREW</p>
-          </li>
-          <li className={active === 3 ? style.active : ''}>
-            <p>03 - TECHNOLOGY</p>
-          </li>
+          <li className={active === 1 ? style.active : ''}>01 - DESTINATION</li>
+          <li className={active === 2 ? style.active : ''}>02 - CREW</li>
+          <li className={active === 3 ? style.active : ''}>03 - TECHNOLOGY</li>
         </ul>
       </nav>
     </div>
