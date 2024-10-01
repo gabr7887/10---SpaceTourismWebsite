@@ -1,13 +1,12 @@
 import './App.css';
+import Home from './Home';
 import Nav from './Nav';
 
 function App() {
   return (
-    <>
-      <div className="container">
-        <Nav active={0} />
-      </div>{' '}
-    </>
+    <div className="container">
+      <Home />
+    </div>
   );
 }
 

@@ -3,6 +3,8 @@ import logo from './assets/shared/logo.svg';
 import style from './Nav.module.css';
 
 const Nav = ({ active }) => {
+  const [activeMenu, setActiveMenu] = React.useState(false);
+
   return (
     <div className={style.container}>
       <div className={style.logoDiv}>
@@ -11,13 +13,23 @@ const Nav = ({ active }) => {
       <div className={style.detailDiv}>
         <p className={style.detail}> </p>
       </div>
-      <div className={style.hamburgerMenuDiv}>
+      <div
+        className={style.hamburgerMenuDiv}
+        onClick={() => {
+          setActiveMenu(true);
+        }}
+      >
         <p className={style.menuBar}> </p>
         <p className={style.menuBar}> </p>
         <p className={style.menuBar}> </p>
       </div>
-      <nav className={style.ulBg}>
-        <div className={style.closeIcon}>
+      <nav className={`${style.ulBg} ${activeMenu ? style.activeMenu : ''}`}>
+        <div
+          className={style.closeIcon}
+          onClick={() => {
+            setActiveMenu(false);
+          }}
+        >
           <p className={style.closeBar1}> </p>
           <p className={style.closeBar2}> </p>
         </div>
