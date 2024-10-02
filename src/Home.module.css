@@ -57,6 +57,32 @@
 @media (width <= 768px) {
   .container{
     background-image: url('./assets/home/background-home-tablet.jpg');
+    gap: 0px;
+  }
+
+  .subContainer{
+    grid-template-columns: 1fr;
+    gap: var(--s800);
+    max-width: 688px;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--s400);
+  }
+
+  .content{
+    text-align: center;
+  }
+
+  .content p{
+    font: var(--fontT9);
+    max-width: 512px;
+  }
+
+  .explore{
+    justify-self: center;
   }
 }
 
@@ -64,5 +90,33 @@
   .container{
     background-image: url('./assets/home/background-home-mobile.jpg');
   }
+  
+  .subContainer{
+    margin: var(--s800) auto;
+    gap: var(--s1200);
+  }
+
+  .content span{
+    font: var(--fontM6);
+  }
+
+  .content h1{
+    font: var(--fontM1);
+  }
+
+  .content p{
+    font: var(--fontM9);
+    max-width: 327px;
+  }
+
+  .explore{
+    width: 144px;
+    height: 144px;
+  }
+  
+  .explore p{
+    font: var(--fontM4);
+  }
+
 }
 
