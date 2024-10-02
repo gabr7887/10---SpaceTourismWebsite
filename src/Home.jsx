@@ -17,7 +17,9 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <div className={style.Explore}></div>
+        <div className={style.explore}>
+          <p>explore</p>
+        </div>
       </div>
     </div>
   );
