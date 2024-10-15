@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './Nav';
+import Nav from '../Nav';
 import style from './Home.module.css';
 
 const Home = () => {
