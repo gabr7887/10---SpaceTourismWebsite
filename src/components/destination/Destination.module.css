@@ -8,6 +8,7 @@
   background-image: url('../../assets/destination/background-destination-desktop.jpg');
 }
 
+
 .subContainer{
   width: 80%;
   margin: 0 auto;
@@ -121,4 +122,71 @@
 .infoValue{
   font: var(--font6);
   color: var(--white);
+}
+
+@media (width <= 1100px) {
+  .mainContainer{
+    grid-template-columns: 1fr;
+  } 
+
+  .right{
+    display: grid;
+    text-align: center;
+  }
+
+  .nav{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title{
+    font: var(--fontT5);
+  }
+
+  .itemTitle{
+    font: var(--fontT2);
+  }
+
+  .itemText{
+    font: var(--fontT9);
+  }
+
+  .photoDiv img{
+    max-width: 70%;
+  }
+}
+
+@media (width <= 600px) {
+  .subContainer{
+    width: 100%;
+    padding: 0 var(--s400);
+  }
+
+  .title{
+    font: var(--fontM6);
+  }
+
+  .navItem{
+    font: var(--fontM8);
+  }
+  
+  .itemTitle{
+    font: var(--fontM2);
+  }
+
+  .itemText{
+    font: var(--fontM9);
+  }
+
+  .infoDiv{
+    grid-template-columns: 1fr;
+  }
+
+  .right{
+    padding: 0;
+  }
+
+  .photoDiv img{
+    max-width: 100%;
+  }
 }
