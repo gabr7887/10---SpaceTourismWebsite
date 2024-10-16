@@ -22,10 +22,42 @@
 
 .nav{
   display: flex;
-  gap: 32px;
+  gap: var(--s400);
 }
 
 .navItem{
   font: var(--font8);
   color: var(--blue-300);
+  padding-bottom: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navItem.active{
+  color: var(--white);
+}
+
+
+.navItem::after{
+  transition: ease-in-out 0.2s;
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  bottom: 0px;
+  left: 0px;
+}
+
+.navItem.active::after{
+  background-color: var(--white);
+}
+
+.navItem.active:hover::after{
+  background-color: var(--white);
+}
+
+.navItem:hover::after{
+  background-color: hsla(0 0 100 / 30%);
 }
