@@ -125,6 +125,9 @@
 }
 
 @media (width <= 1100px) {
+  .container{
+    background-image: url('../../assets/destination/background-destination-tablet.jpg');
+  }
   .mainContainer{
     grid-template-columns: 1fr;
   } 
@@ -157,6 +160,9 @@
 }
 
 @media (width <= 600px) {
+  .container{
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+  }
   .subContainer{
     width: 100%;
     padding: 0 var(--s400);

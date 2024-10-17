@@ -1,0 +1,24 @@
+.title{
+  font: var(--font5);
+  color: var(--white);
+  display: flex;
+  gap: var(--s300);
+  margin-bottom: var(--s300);
+}
+
+.title span{
+  font-weight: 700;
+  opacity: 0.3;
+}
+
+@media (width <= 1100px) {
+  .title{
+    font: var(--fontT5);
+  }
+}
+
+@media (width <= 600px) {
+  .title{
+    font: var(--fontM6);
+  }
+}
