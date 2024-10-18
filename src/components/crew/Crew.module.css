@@ -68,9 +68,13 @@
 
 
 .photoDiv{
-  padding: var(--s400) 0;
-  max-height: 720px;
-
+  padding: var(--s400) 0 0 0;
 }
+
+.photoDiv img{
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+
 
 
