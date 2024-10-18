@@ -19,6 +19,7 @@
 
 @media (width <= 600px) {
   .title{
+    justify-self: center;
     font: var(--fontM6);
   }
 }
