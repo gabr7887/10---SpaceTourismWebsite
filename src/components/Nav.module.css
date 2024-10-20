@@ -43,10 +43,13 @@
 .navItems li{
   display: block;
   padding: var(--s600) 0;
+  position: relative;
+}
+
+.navItems li a{
   color: var(--white);
   font: var(--font8);
   cursor: pointer;
-  position: relative;
 }
 
 .navItems li::after{

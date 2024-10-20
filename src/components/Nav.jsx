@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/shared/logo.svg';
 import style from './Nav.module.css';
 
@@ -37,13 +38,21 @@ const Nav = ({ active }) => {
           <li className={active === 0 ? style.active : ''}>
             {active === 0 &&
             window.innerWidth >= 530 &&
-            window.innerWidth <= 768
-              ? 'HOME'
-              : '00 - HOME'}
+            window.innerWidth <= 768 ? (
+              <Link to="/">HOME</Link>
+            ) : (
+              <Link to="/">00 - HOME</Link>
+            )}
           </li>
-          <li className={active === 1 ? style.active : ''}>01 - DESTINATION</li>
-          <li className={active === 2 ? style.active : ''}>02 - CREW</li>
-          <li className={active === 3 ? style.active : ''}>03 - TECHNOLOGY</li>
+          <li className={active === 1 ? style.active : ''}>
+            <Link to="/destination">01 - DESTINATION</Link>
+          </li>
+          <li className={active === 2 ? style.active : ''}>
+            <Link to="/crew">02 - CREW</Link>
+          </li>
+          <li className={active === 3 ? style.active : ''}>
+            <Link to="/technology">03 - TECHNOLOGY</Link>
+          </li>
         </ul>
       </nav>
     </div>
