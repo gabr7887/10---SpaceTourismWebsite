@@ -35,6 +35,7 @@
 .name{
   font: var(--font3);
   color: var(--white);
+  text-transform: uppercase;
   margin: var(--s200) 0 var(--s300) 0;
 }
 
@@ -162,7 +163,5 @@
   .photoDiv img{
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   }
-
-  
 
 }
